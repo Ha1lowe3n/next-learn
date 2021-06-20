@@ -1,21 +1,11 @@
-import A from '../components/A'
+import MainContainer from "../components/MainContainer";
 
 export default function Home() {
     return (
-        <div>
-            <div className="navbar">
-                <A text="Главная" href="/" />
-                <A href="/users" text="Пользователи" />
+        <MainContainer keywords={"main page"}>
+            <div>
+                <h1>Главная страница</h1>
             </div>
-            <h1>Главная страница</h1>
-            <style jsx>
-                {`
-                    .navbar {
-                        background: orange;
-                        padding: 15px;
-                    }
-                `}
-            </style>
-        </div>
-    )
+        </MainContainer>
+    );
 }
